@@ -1,25 +1,16 @@
 <template>
   <div class="masonryComponent">
 			<div class="masonryItem">
-				<img src="../assets/1.png" alt="">
+				<img src="../assets/Dr.Strange.png" class="pics" alt="">
 			</div>
 			<div class="masonryItem">
-				<img src="../assets/2.png" alt="">
+				<img src="../assets/Myanga_Shazam(Bling).png" class="pics" alt="">
 			</div>
 			<div class="masonryItem">
-				<img src="../assets/3.png" alt="">
+				<img src="../assets/Pirate Ghost.png" class="pics" alt="">
 			</div>
 			<div class="masonryItem">
-				<img src="../assets/4.png" alt="">
-			</div>
-			<div class="masonryItem">
-				<img src="../assets/5.png" alt="">
-			</div>
-			<div class="masonryItem">
-				<img src="../assets/6.png" alt="">
-			</div>
-      <div class="masonryItem">
-				<img src="../assets/7.png" alt="">
+				<img src="../assets/Poisonous Mosquito.png" class="pics" alt="">
 			</div>
 		</div>
 </template>
@@ -38,9 +29,9 @@ export default {
     trueOrder: false,
     waitForImages: false,
     margin: 24,
-    columns: 3,
+    columns: 2,
     breakAt: {
-        1200: 3,
+        1200: 2,
         940: 1,
         520: 1,
         400: 1
@@ -60,6 +51,16 @@ export default {
 .masonryItem img {vertical-align:bottom;}
 .masonryItem.over {border:2px dashed #eee;}
 .masonryItem.over img {opacity:0.4;}
+
+.pics {
+  max-width: 600px;
+}
+
+@media (max-width: 1000px) {
+  .pics {
+    max-width: 500px;
+  }
+}
 
 /* @media (max-width: 700px) {
     .masonryItem img {width: 80%}
